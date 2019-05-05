@@ -1,0 +1,28 @@
+
+== Variables
+WARNING: Check why basedir does not resolve
+
+basedir: {basedir}
+
+imagedir: {imagedir}
+
+slides: {slides}
+
+[%notitle]
+== Will not show up in presentation
+Slide without title
+
+== Full Size images
+image::{imagedir}/bumper.jpg[canvas,size=contain]
+
+[background-color="yellow"]
+== The sandbox
+WARNING: This is just a sample
+
+[source,javascript]
+----
+const Enum = Object.freeze({
+  ONE: 'one',
+  TWO: 'two'
+});
+----
