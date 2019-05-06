@@ -1,0 +1,13 @@
+[%notitle]
+== Examples
+
+[quote, 'https://www.destroyallsoftware.com/talks/wat[Gary Bernhardt from CodeMash 2012^]']
+____
+[source,javascript]
+----
+include::{srcdir}/transition.spec.js[tags=transition]
+----
+____
+
+
+

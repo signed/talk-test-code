@@ -4,7 +4,7 @@
 === Arrange Act Assert
 
 [source,typescript,indent=0]
-.Arrange Act Assert
+.Arrange / Act / Assert
 ----
 include::{srcdir}/structure.spec.ts[tags=arrange-act-assert]
 ----
@@ -20,7 +20,7 @@ Assert:: Check that the expected behavior occurred.
 === Collect Ass(Arrange Act)ert
 
 [source,typescript,indent=0]
-.Collect Ass(Arrange Act)ert
+.Collect / Ass(Arrange / Act)ert
 ----
 include::{srcdir}/structure.spec.ts[tags=collect-act-assert]
 ----

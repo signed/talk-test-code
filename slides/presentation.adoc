@@ -5,12 +5,23 @@
 :srcdir: ../src
 = Test Code
 
+[NOTE.speaker]
+--
+- Tests are what keep your production code flexible, maintainable and reusable.
+- make changes to code without fear.
+- Tests enable change.
+- Safety net for regression
+- living documentation
+--
+
 //include::{slides}/sandbox.adoc[]
 include::{slides}/liability.adoc[]
 
 include::{slides}/what-I-strive-for.adoc[]
 
 include::{slides}/clean-tests.adoc[]
+
+include::{slides}/demo.adoc[]
 
 //include::{slides}/metrics.adoc[]
 
