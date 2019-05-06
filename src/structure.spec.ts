@@ -25,10 +25,10 @@ describe('the business reason behind this test case', () => {
 
     describe('arrange assert act', () => {
 
-        let variableTaxPart;
+        let marketTax;
 
         beforeEach(() => {
-            variableTaxPart = anyTaxRate();
+            marketTax = anyTaxRate();
         });
 
         //tag::collect-act-assert[]
@@ -39,11 +39,11 @@ describe('the business reason behind this test case', () => {
         //end::collect-act-assert[]
 
         function marketTaxIs(value: number) {
-            variableTaxPart = value;
+            marketTax = value;
         }
 
         function totalTaxRateForBaseRate(value: number) {
-            const serverResponse = { server: { response: variableTaxPart } };
+            const serverResponse = { server: { response: marketTax } };
             const server = jest.fn().mockReturnValue(serverResponse);
             return new Production(server).totalTaxWithBaseTax(value);
         }
