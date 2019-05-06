@@ -1,0 +1,7 @@
+== What I strive for
+* Readable
+** only show relevant details
+** pick good names
+* Consistent test data
+* As little duplication as necessary
+

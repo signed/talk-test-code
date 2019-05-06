@@ -2,9 +2,11 @@
 :linkattrs:
 :slides: .
 :imagedir: ../images
-= The Topic
+= Test Code
 
-include::{slides}/sandbox.adoc[]
+//include::{slides}/sandbox.adoc[]
+include::{slides}/strive-for-in-test-code.adoc[]
+include::{slides}/arrange-act-assert.adoc[]
 
 == !
 That's it! +
