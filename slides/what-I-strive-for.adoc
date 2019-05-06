@@ -1,0 +1,15 @@
+== What I strive for
+
+=== Readable
+* good names
+* only show relevant details
+* single concept per test
+* good failure messages
+
+=== Maintainable
+* As little duplication as necessary
+* Consistent test data
+* isolated and independent
+* reproducible
+* reliable
+

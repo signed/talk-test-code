@@ -1,0 +1,11 @@
+== can become a liability
+
+
+=== afasfd
+* Tests must change as the production code changes
+* The dirtier the tests, the harder they are to change
+* Tests can become a liability due to technical debt of the dirtiness
+
+=== Clean Code in Tests is even more important than in Production
+
+- Tests in
