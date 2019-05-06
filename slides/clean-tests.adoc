@@ -1,10 +1,26 @@
 == Clean Tests
 
+[%notitle]
 === Arrange Act Assert
 
-Arrange: Set up the test. Mock outgoing RPCs, populate fake databases, etc.
-Act: Run the function under test.
-Assert: Check that the expected behavior occurred.
+[source,typescript,indent=0]
+.Arrange Act Assert
+----
+include::{srcdir}/structure.spec.ts[tags=arrange-act-assert]
+----
 
+[NOTE.speaker]
+--
+Arrange:: Set up the test. Mock outgoing RPCs, populate fake databases, etc.
+Act:: Run the function under test.
+Assert:: Check that the expected behavior occurred.
+--
+
+[%notitle]
 === Collect Ass(Arrange Act)ert
-another code snippet
+
+[source,typescript,indent=0]
+.Collect Ass(Arrange Act)ert
+----
+include::{srcdir}/structure.spec.ts[tags=collect-act-assert]
+----

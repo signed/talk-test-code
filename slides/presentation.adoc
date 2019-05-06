@@ -2,6 +2,7 @@
 :linkattrs:
 :slides: .
 :imagedir: ../images
+:srcdir: ../src
 = Test Code
 
 //include::{slides}/sandbox.adoc[]

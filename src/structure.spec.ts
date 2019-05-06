@@ -2,7 +2,7 @@ class Production {
     constructor(private server: () => any) {
     }
 
-    code(value: number): number {
+    totalTaxWithBaseTax(value: number): number {
         return value + this.server().server.response;
     }
 }
@@ -14,11 +14,13 @@ function anyTaxRate() {
 describe('the business reason behind this test case', () => {
 
     describe('arrange act assert', () => {
+        //tag::arrange-act-assert[]
         it('the tax rate is the sum of the base tax and a variable market tax', () => {
             const server = jest.fn().mockReturnValue({ server: { response: 12 } });
-            let result = new Production(server).code(7);
+            let result = new Production(server).totalTaxWithBaseTax(7);
             expect(result).toEqual(19);
         });
+        //end::arrange-act-assert[]
     });
 
     describe('arrange assert act', () => {
@@ -29,20 +31,21 @@ describe('the business reason behind this test case', () => {
             variableTaxPart = anyTaxRate();
         });
 
+        //tag::collect-act-assert[]
         it('the tax rate is the sum of the base tax and a variable market tax', () => {
-            variablePartOfTheTaxIs(12);
-
+            marketTaxIs(12);
             expect(totalTaxRateForBaseRate(7)).toEqual(19);
         });
+        //end::collect-act-assert[]
 
-        function variablePartOfTheTaxIs(value: number) {
+        function marketTaxIs(value: number) {
             variableTaxPart = value;
         }
 
         function totalTaxRateForBaseRate(value: number) {
             const serverResponse = { server: { response: variableTaxPart } };
             const server = jest.fn().mockReturnValue(serverResponse);
-            return new Production(server).code(value);
+            return new Production(server).totalTaxWithBaseTax(value);
         }
     });
 });
