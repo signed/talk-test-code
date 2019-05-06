@@ -25,7 +25,7 @@ describe('the business reason behind this test case', () => {
 
     describe('arrange assert act', () => {
 
-        let marketTax ;
+        let marketTax;
 
         beforeEach(() => {
             marketTax = anyTaxRate();
