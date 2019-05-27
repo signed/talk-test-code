@@ -29,28 +29,34 @@ describe('the business reason behind this test case', () => {
     describe('arrange assert act', () => {
 
         let marketTax;
+        let baseTax;
 
         beforeEach(() => {
             marketTax = anyTaxRate();
+            baseTax = anyTaxRate();
         });
 
         //tag::collect-act-assert[]
         it('the tax rate is the sum of the base tax and a variable market tax', () => {
+            baseTaxIs(7);
             marketTaxIs(12);
 
-            expect(totalTaxRateForBaseRate(7)).toEqual(19);
+            expect(totalTaxRate()).toEqual(19);
         });
-
         //end::collect-act-assert[]
 
         function marketTaxIs(value: number) {
             marketTax = value;
         }
 
-        function totalTaxRateForBaseRate(value: number) {
+        function baseTaxIs(value: number) {
+            baseTax = value;
+        }
+
+        function totalTaxRate() {
             const serverResponse = { server: { response: marketTax } };
             const server = jest.fn().mockReturnValue(serverResponse);
-            return new Production(server).totalTaxWithBaseTax(value);
+            return new Production(server).totalTaxWithBaseTax(baseTax);
         }
     });
 });
