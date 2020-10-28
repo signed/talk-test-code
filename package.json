@@ -8,7 +8,7 @@
   },
   "private": true,
   "devDependencies": {
-    "@signed/scribe": "0.1.0",
+    "@signed/scribe": "0.2.0",
     "@types/jest": "26.0.14",
     "jest": "26.4.2",
     "typescript": "4.0.3"
